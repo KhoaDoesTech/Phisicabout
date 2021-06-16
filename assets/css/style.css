@@ -1,0 +1,401 @@
+/*  Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hàng */
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Cột - Column */
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 48px;
+    margin-top: auto;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.3333333333%;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+/* Main */
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 48px;
+    background-color: black;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+    list-style-type: none;
+}
+
+#nav > li > a {
+    color:   #E18942;
+    text-transform: uppercase;
+}
+
+/* Định dạng thanh điều hướng chính */
+#nav li a {
+    display: block;
+    padding: 0 24px;
+    line-height: 48px;
+    text-decoration: none;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+/* Đổi màu khi chạm vào */
+#nav > li:hover > a ,
+#nav .subnav li:hover a{
+    color: black;
+    background-color:  #EECD86;
+}
+
+#nav .nav-sort-down {
+    font-size: 28px;
+}
+
+/* Định dạng thanh điều hướng phụ */
+#nav .subnav {
+    position: absolute;
+    display: none;
+    min-width: 200px;
+    box-shadow: 0 0 12px rgba(0 , 0 , 0 , 0.3);
+    background-color:  #7A3E48;
+}
+
+#nav .subnav a {
+    color: #E18942 ;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px ;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: tomato;
+}
+
+#header .search-btn .search-icon {
+    color: white;
+    font-size: 16px;
+    line-height: 48px;
+}
+
+#slider {
+    position: relative;
+    margin-top: 48px;
+    padding-top: 75%;
+    background: url(/assets/img/Slider/Khoa2.jpg) top center / cover no-repeat ;
+}
+
+#slider .text-content {
+    position: absolute;
+    left: 50%; 
+    /* color:   #E18942; */
+    color: #000066;
+    bottom: 120px;
+    padding: 16px;
+    text-align: center;
+    /* background-color: black; */
+    transform: translateX(-50%);
+    /* width: 32%; */
+    /* margin-left: 37%; */
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .text-discription {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+#container {
+
+}
+
+/* Light Section */
+#container .light-section {
+    background: #7A3E48;
+    color: #E18942;
+}
+
+#container .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 40px;
+    /* padding: 64px 0 112px; */
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+#container .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#container .section-sub-heading {
+    opacity: 0.4;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#container .light-text {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 25px;
+}
+
+#container .lession-list {
+    margin-top: 48px;
+}
+
+#container .lession-item {
+    /* float: left; */
+    /* width: 33.3333333%; */
+    text-align: center;
+}
+
+#container .lession-name {
+    font-size: 15px;
+}
+
+#container .picture {
+    width: 154px;
+    height: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+} 
+
+/* Begin Book Section */
+#container .book-section {
+    background: #EECD86;
+}
+
+.book-list {
+    margin-top: 40px;
+    background: #7A3E48;
+}
+
+.book-list li {
+    padding: 11px 16px;
+    font-size: 15px;
+    list-style-type: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-list .book-price {
+    color: white;
+    padding: 3px 4px;
+    margin-left: 20px;
+    background: tomato;
+    border-radius: 4px;
+}
+
+/* Place Buy Book */
+/* .place-list {
+    margin: 32px;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+} */
+
+/* .place-item {
+    float: left;
+    width: 33.33333333%;
+    padding: 0 8px;
+    margin-bottom: 48px;
+    margin-top: 32px;
+} */
+
+.place-img {
+    width: 100%;
+    height: 380px;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    padding: 16px;
+    font-size: 15px;
+    background: #7A3E48;
+    text-transform: uppercase;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    color: #EECD86;
+    margin-top: 15px;
+}
+
+.place-decs {
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.place-buy-btn {
+    color: #EECD86;
+    display: inline-block;
+    padding: 11px 16px;
+    margin-top: 16px;
+    background: black;
+    text-decoration: none;
+}
+
+.place-buy-btn:hover {
+    color: black;
+    background: #ccc;
+}
+
+
+/*Contact Section*/
+#container .contact-section{
+    color:#E18942;
+    background: #7A3E48;
+    height: 550px;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i[class*="fas"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    background: black;
+    color: #EECD86;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+    cursor: pointer;
+    color: black;
+    background: #ccc;
+}
+
+#container .school-img {
+    width: 100%;
+    height: 50%;
+}
+
+#footer {
+    text-align: center;
+    padding: 64px 16px;
+    color: rgba(0 , 0 , 0 , 0.6);
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: rgba(0 , 0 , 0 , 0.6);
+}
+
+#footer a:hover {
+    color: rgba(0 , 0 , 0 , 0.4);
+}
